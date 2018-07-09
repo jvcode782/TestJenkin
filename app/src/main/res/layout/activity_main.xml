@@ -8,58 +8,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.barquecontech.niranjantest.MainActivity">
+    tools:context="com.barquecontech.appfont.MainActivity">
 
-
-    <EditText
-        android:id="@+id/result"
+    <TextView
+        android:id="@+id/hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter Number"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="10dp" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/result1"
-        android:text="Result"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/add" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/mul"
-        android:text="*"
-        android:layout_alignBaseline="@+id/add"
-        android:layout_alignBottom="@+id/add"
-        android:layout_toEndOf="@+id/add" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/sub"
-        android:text="-"
-        android:layout_above="@+id/add"
-        android:layout_toEndOf="@+id/add" />
-
-    <Button
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:id="@+id/add"
-        android:text="+"
-        android:layout_marginStart="22dp"
-        android:layout_below="@+id/result1"
-        android:layout_alignStart="@+id/result" />
-
-    <Button
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:id="@+id/div"
-        android:text="/"
-        android:layout_below="@+id/mul"
-        android:layout_toStartOf="@+id/mul" />/
+        android:text="Hello World!"
+        android:textSize="15dp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        />
+    <com.barquecontech.appfont.CustomTextView
+        android:id="@+id/customtextview"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Email ID id one@two.three password is four five six"
+        android:layout_below="@+id/hello"
+        android:textSize="20dp"
+      />
 </RelativeLayout>

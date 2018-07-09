@@ -1,4 +1,4 @@
-package com.barquecontech.niranjantest;
+package com.barquecontech.appfont;
 
 import org.junit.Test;
 
